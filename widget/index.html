@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="data:," />
+  <title>悬浮AI小助手</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- 悬浮球 -->
+  <div id="orb" title="悬浮AI小助手（拖动移动，点击打开）">
+    <span class="orb-face">🤖</span>
+  </div>
+
+  <!-- 聊天面板 -->
+  <aside id="panel" class="hidden">
+    <header class="panel-header">
+      <span class="panel-title">✨ 悬浮小助手</span>
+      <span id="status" class="status">
+        <i class="dot"></i><span id="status-text">连接中…</span>
+      </span>
+      <button id="btn-bind" class="icon-btn" title="切换绑定的对话">⚙</button>
+      <button id="btn-close" class="icon-btn" title="收起">✕</button>
+    </header>
+
+    <div id="messages" class="messages"></div>
+
+    <footer class="composer">
+      <textarea id="input" rows="1" placeholder="输入消息，Enter 发送，Shift+Enter 换行"></textarea>
+      <div class="composer-row">
+        <button id="btn-stop" class="ghost-btn" title="停止当前回复" disabled>■ 停止</button>
+        <span id="model-info" class="model-info"></span>
+        <button id="btn-send" class="send-btn">发送</button>
+      </div>
+    </footer>
+  </aside>
+
+  <script src="app.js"></script>
+</body>
+</html>

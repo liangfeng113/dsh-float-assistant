@@ -1,0 +1,10 @@
+# 依赖
+node_modules/
+.npm-cache/
+
+# 运行时状态：绑定关系与 Electron 用户数据（含本机路径、会话 ID）
+config.json
+.electron-user-data/
+
+# 日志
+*.log

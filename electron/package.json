@@ -1,0 +1,13 @@
+{
+  "name": "floating-ai-assistant-desktop",
+  "version": "1.0.0",
+  "private": true,
+  "description": "悬浮AI小助手 - 桌面悬浮窗（Electron）",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "devDependencies": {
+    "electron": "^31.0.0"
+  }
+}
